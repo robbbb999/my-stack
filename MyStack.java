@@ -28,5 +28,20 @@ public class MyStack {
         return aux;
     }
 
+    public int top() throws Exception{
+        if(nextElementIndex == 0){
+            throw new Exception("Lo stack è vuoto");
+        }
+        int topElement=this.stack[nextElementIndex-1];
+        return topElement;
+    }
+
+    public boolean isEmpty(){
+        if(nextElementIndex==0){
+            return true;
+        }
+        return false;
+    }
+
 
 }
